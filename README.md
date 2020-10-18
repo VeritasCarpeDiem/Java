@@ -5,7 +5,7 @@
 2. If/else, Loops, 
 3. Built-in functions (i.e. Math.Pow(), strcmp(), etc. )
 4. Arrays
-5. OOP (classes, inheritance, etc. )
+5. OOP (classes, data encapsulation, inheritance, Polymorphism etc. )
 6. Sorting and Searching
 7. Functions
-8. ...
+8. 
