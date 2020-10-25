@@ -1,4 +1,10 @@
-//main driver class
+/*
+Program Name: main
+Programmer: Jin Kim
+Date: 10/24
+Version: 1.2
+Description: The main driver function for Persona and Employee class
+*/
 package com.JinKim.School;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
@@ -11,22 +17,11 @@ public class main
         Scanner in= new Scanner(System.in);
         DecimalFormat twoDigit =new DecimalFormat("0.00");
 
-        ComplexNumber num1 = new ComplexNumber(4, 2);
-        ComplexNumber num2 = new ComplexNumber(2, 1);
+        Employee Bob= new Employee("Bob",30,12345,20,13.5 );
 
-        //display imaginary numbers
-        System.out.println("Imaginary Numbers:");
-        num1.Display();
-        num2.Display();
+        Bob.PrintInfo(); //print employee information
 
-        //add imaginary numbers
-        System.out.println("Sum:");
-        ComplexNumber sum = new ComplexNumber();
-        sum.Add(num1, num2);
+        System.out.println("Weekly pay is $"+Bob.CalculateWeeklyPay());
 
-        //subtract imaginary numbers
-        System.out.println("Difference: ");
-        ComplexNumber diff = new ComplexNumber();
-        diff.Subtract(num1, num2);
     }
 }
